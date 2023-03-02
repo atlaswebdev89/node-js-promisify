@@ -64,6 +64,7 @@ http
   .listen(PORT, "127.0.0.1", () => {
     console.log("Start http server!");
     console.log("Сервер начал прослушивание запросов на порту " + PORT);
+    process.stdout.write("Proccess pid " + process.pid);
   });
 
 // handler not found endpoint api
